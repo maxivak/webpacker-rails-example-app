@@ -1,24 +1,9 @@
-# README
+# Webpacker example app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Using Webpacker in Rails 5 app.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+Read more:
+* https://gist.github.com/maxivak/2612fa987b9f9ed7cb53a88fcba247b3
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

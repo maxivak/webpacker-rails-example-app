@@ -1,5 +1,11 @@
 {
   "name": "webpacker-rails-example-app",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "webpack": "3.4.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
 }
