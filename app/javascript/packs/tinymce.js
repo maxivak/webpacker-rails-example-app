@@ -1,11 +1,3 @@
-// dist
-//import 'tinymce-dist/tinymce.full.js';
-//import 'tinymce-dist/jquery.tinymce.min.js';
-
-// skin - not work
-//import 'tinymce-light-skin/lib/skin.js';
-
-
 
 // from tinymce package
 
