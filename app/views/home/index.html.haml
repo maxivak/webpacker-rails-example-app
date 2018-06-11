@@ -1,7 +1,18 @@
-%h1 Hello world
-
 .container
+  %h1 Hello world
+
   .mystyle
-    I will be blue if webpacker's CSS is working.
+    Primary color - webpacker's CSS is working.
 
 
+  .jquery-test
+    jQuery is not yet working.
+
+  font-awesome
+
+  %i.fa.fa-thumbs-o-up
+
+:javascript
+  $(function(){
+    $(".jquery-test").html("jQuery is working.");
+  });

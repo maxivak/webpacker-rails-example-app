@@ -7,6 +7,22 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-console.log('Hello World from Webpacker')
+//console.log('Hello World from Webpacker')
 
+
+// jquery
+
+import $ from 'jquery'
+global.$ = $
+global.jQuery = $
+
+
+
+// bootstrap js
+import 'bootstrap/dist/js/bootstrap';
+
+
+//
 require.context('../images/', true, /\.(gif|jpg|png|svg)$/i)
+
+
