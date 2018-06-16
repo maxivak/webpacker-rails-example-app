@@ -1,6 +1,11 @@
-const { environment } = require('@rails/webpacker')
+const { environment } = require('@rails/webpacker');
 
 const webpack = require('webpack');
+
+
+//const erb =  require('./loaders/erb')
+//environment.loaders.append('erb', erb)
+
 
 // resolve-url-loader must be used before sass-loader
 environment.loaders.get('sass').use.splice(-1, 0, {
@@ -11,8 +16,8 @@ environment.loaders.get('sass').use.splice(-1, 0, {
 });
 
 
+// plugins
 
-// Add an additional plugin of your choosing : ProvidePlugin
 environment.plugins.prepend('Provide', new webpack.ProvidePlugin({
         $: 'jquery',
         JQuery: 'jquery',
@@ -22,4 +27,18 @@ environment.plugins.prepend('Provide', new webpack.ProvidePlugin({
     })
 )
 
-module.exports = environment
+
+// aliases
+const aliasConfig = {
+    'jquery': 'jquery/src/jquery',
+    'jquery-ui': 'jquery-ui-dist/jquery-ui.js',
+    //'elfinder': 'elfinder/js/elfinder.full.js'
+
+};
+
+environment.config.set('resolve.alias', aliasConfig);
+
+
+
+//
+module.exports = environment;

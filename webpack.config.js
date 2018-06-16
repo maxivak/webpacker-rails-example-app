@@ -42,21 +42,17 @@ module.exports = {
                 ]
             },
 
-            // tinymce
             {
-                test: require.resolve('tinymce/tinymce'),
-                loaders: [
-                    'imports?this=>window',
-                    'exports?window.tinymce'
-                ]
-            },
-            {
-                test: /tinymce\/(themes|plugins)\//,
-                loaders: [
-                    'imports?this=>window'
-                ]
+                test: /\.(jpg|png|gif|svg)$/,
+                exclude: /node_modules/,
+                loader: 'file-loader'
             },
 
+            // file-loader(for fonts)
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: ['file-loader']
+            },
 
         ]
     },

@@ -8,11 +8,27 @@
   .jquery-test
     jQuery is not yet working.
 
+  :javascript
+    $(function(){
+      $(".jquery-test").html("jQuery is working.");
+    });
+
+
   font-awesome
 
   %i.fa.fa-thumbs-o-up
 
+  %h2 Tooltips
+
+  %button.btn.btn-secondary(type="button" data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+    Show me tooltip
+
+
+  %button(type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Text Tooltip on right")
+    Tooltip on right
+
+
 :javascript
-  $(function(){
-    $(".jquery-test").html("jQuery is working.");
+  jQuery(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
   });
