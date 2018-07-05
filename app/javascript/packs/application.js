@@ -19,14 +19,13 @@ import {} from 'jquery-ujs';
 import 'jquery-ui';
 
 
+//
+//$.widget.bridge('uitooltip', $.ui.tooltip);
+//$.widget.bridge('uibutton', $.ui.button);
+
+
 // bootstrap
 import 'bootstrap/dist/js/bootstrap';
-
-
-
-//
-$.widget.bridge('uitooltip', $.ui.tooltip);
-$.widget.bridge('uibutton', $.ui.button);
 
 
 
